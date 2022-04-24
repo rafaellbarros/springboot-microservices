@@ -22,4 +22,10 @@ public class CourseService {
         log.info("Listing all courses");
         return courseRepository.findAll(pageable);
     }
+
+    public Course findById(Long id, String token) {
+        log.info("id: {}", id);
+        log.info("token: {}", token);
+        return courseRepository.findById(id).orElseThrow(() -> new RuntimeException("Course not foud" + id));
+    }
 }
