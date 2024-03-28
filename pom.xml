@@ -28,6 +28,7 @@
         <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
         <nimbus-jose.version>7.0</nimbus-jose.version>
         <swagger.version>2.9.2</swagger.version>
+        <jakarta.xml.bind-api.version>4.0.2</jakarta.xml.bind-api.version>
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
     </properties>
 
