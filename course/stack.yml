@@ -1,19 +1,22 @@
-version: "3"
+version: "3.8"
 services:
   db:
-    image: mysql
-    container_name: db_mysql_dev
-    volumes:
-      - mysql-data:/var/lib/mysql
+    image: mysql:latest
+    container_name: db_mysql_devdojo
+    restart: always
+    command: mysqld --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     ports:
       - "33061:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=devdojo
+      - MYSQL_DATABASE=devdojo
+    volumes:
+      - mysql_devdojo:/var/lib/mysql
     networks:
-      - mysql-dev-network
-    restart: always
+      - mysql_devdojo_network
+
 volumes:
-  mysql-data:
+  mysql_devdojo:
 networks:
-  mysql-dev-network:
-    driver: bridge
+  mysql_devdojo_network:
+
