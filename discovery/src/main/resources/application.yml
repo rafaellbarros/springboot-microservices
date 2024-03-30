@@ -11,3 +11,9 @@ eureka:
     fetch-registry: false
     service-url:
       defaultZone: http://localhost:${server.port}/eureka/
+
+#Propriedades Documentação
+app-documentation:
+  version: @project.version@
+  api-title: API Car User System
+  description: @project.description@

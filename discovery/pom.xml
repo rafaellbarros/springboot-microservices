@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>academy.devdojo.youtube</groupId>
-        <artifactId>springboot-devdojo-microservices</artifactId>
+        <groupId>br.com.rafaellbarros</groupId>
+        <artifactId>car-user-system</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../</relativePath> <!-- lookup parent from repository -->
     </parent>
@@ -12,10 +12,10 @@
     <artifactId>discovery</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>discovery</name>
-    <description>DevDojo's Service Discovery</description>
+    <description>Car User System Service Discovery</description>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>1.8</java.version>
         <jaxb-runtime.version>2.3.2</jaxb-runtime.version>
         <javax-activation.version>1.2.0</javax-activation.version>
         <jakarta.xml.bind-api.version>4.0.2</jakarta.xml.bind-api.version>
